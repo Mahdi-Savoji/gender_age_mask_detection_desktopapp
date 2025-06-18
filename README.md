@@ -1,8 +1,6 @@
-------
-
 # Mask and Face Attribute Detection App
 
-A desktop GUI application for detecting whether a person is wearing a mask or not, and—if no mask is detected—estimating their **age**, **gender****.
+A desktop GUI application for detecting whether a person is wearing a mask or not, and—if no mask is detected—estimating their **age**, **gender**.
 
 ![Demo Output](/output.gif)
 
@@ -15,13 +13,27 @@ A desktop GUI application for detecting whether a person is wearing a mask or no
 
 ## 🖼️ Example Result
 
- <img src="./test.png" alt="Input Example" width="400" height="400"/>
+<img src="./test.png" alt="Input Example" width="400" height="400"/>
 
 **Output in GUI (if no mask):**
 
-- Age: 25–32 years
-- Gender: Male
+- Age: 25–32 years  
+- Gender: Male  
 - Gaze: Looking Left
+
+------
+
+## 🧠 Model Training
+
+The **mask detection model** was trained using the InceptionV3 architecture in a custom Jupyter Notebook:
+
+📓 [Train-MaskVSwihtoutMaskModel.ipynb](./Train-MaskVSwihtoutMaskModel.ipynb)
+
+You can download the trained model file (`my_InceptionV3.h5`) from the following link:
+
+🔗 [Download Model from Google Drive](https://drive.google.com/file/d/1iT2gndF0LtGfr97n3JLixMuzdk3ccmeV/view?usp=sharing)
+
+> After downloading, place it in the root directory and ensure the filename is exactly: `my_InceptionV3.h5`
 
 ------
 
@@ -35,6 +47,12 @@ A desktop GUI application for detecting whether a person is wearing a mask or no
 - scikit-learn
 - NumPy
 - Tkinter (usually included with Python)
+
+### Install Requirements
+
+```bash
+pip install -r requirements.txt
+```
 
 ### Install Requirements
 
