@@ -15,8 +15,6 @@ A desktop GUI application for detecting whether a person is wearing a mask or no
 
 ## 🖼️ Example Result
 
-**Input Image:**
-
  <img src="./test.png" alt="Input Example" width="400" height="400"/>
 
 **Output in GUI (if no mask):**
